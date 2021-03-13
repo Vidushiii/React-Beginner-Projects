@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+//import App from './App';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <h1>Hello World !!</h1>,
   document.getElementById('root')
 );
+ReactDOM.render(
+  < ><h1>Here, we will have multiple things inside one render function</h1>
+    <p>For this we are using fragment function </p>
+    <p>In place of writing whole fragment function we can write <></>in above 16 versions of react </p>
+  </>, document.getElementById('root')
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+);
+
+
